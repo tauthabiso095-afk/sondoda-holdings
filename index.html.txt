@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sondoda Holdings (Pty) Ltd</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: black;
+}
+
+header img {
+    height: 60px;
+}
+
+nav a {
+    color: gold;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+    url('YOUR_BACKGROUND_IMAGE_HERE');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: gold;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.btn {
+    background: gold;
+    color: black;
+    padding: 15px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SERVICES */
+.services {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: gold;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #111;
+    margin: 15px;
+    padding: 30px;
+    width: 250px;
+    border: 1px solid gold;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px;
+    background: black;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Sondoda Logo">
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Sondoda Holdings</h1>
+    <p>Success is Certain. Delivering excellence in Construction, Logistics, Engineering & Transport Solutions.</p>
+    <a href="https://wa.me/27671068375" class="btn">Contact Us</a>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="grid">
+        <div class="card">⚙️ Engineering Supplies</div>
+        <div class="card">🚜 Plant Hire</div>
+        <div class="card">🏗️ Construction & Designs</div>
+        <div class="card">🚛 Transport & Logistics</div>
+        <div class="card">🚌 Scholar Transport</div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 067 106 8375</p>
+    <p>📧 bafanamoses19@gmail.com</p>
+    <p>📍 511 Kagiso 1 Section, Ledig, Rustenburg</p>
+</section>
+
+<footer>
+    <p>© 2026 Sondoda Holdings (Pty) Ltd | Success is Certain</p>
+</footer>
+
+</body>
+</html>
