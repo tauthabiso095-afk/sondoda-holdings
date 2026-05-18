@@ -15,7 +15,41 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.85);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
 
+.nav-logo{
+color:gold;
+font-size:24px;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:gold;
+}
 body{
 font-family:Arial, sans-serif;
 background:black;
@@ -174,7 +208,7 @@ WhatsApp Us
 </div>
 
 </section>
-<section class="services-section">
+<section id="services" class="services-section">
 
 <h2>Our Services</h2>
 
