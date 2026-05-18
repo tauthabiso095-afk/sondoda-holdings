@@ -80,7 +80,50 @@ transition:0.3s;
 background:white;
 transform:scale(1.05);
 }
+.services-section{
+padding:100px 20px;
+background:#111;
+text-align:center;
+}
 
+.services-section h2{
+font-size:50px;
+color:gold;
+margin-bottom:60px;
+}
+
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.card{
+background:#1b1b1b;
+padding:40px;
+border-radius:20px;
+transition:0.3s;
+border:1px solid #333;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:gold;
+box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.card h3{
+color:gold;
+margin-bottom:20px;
+font-size:28px;
+}
+
+.card p{
+color:#ccc;
+line-height:1.6;
+}
 footer{
 background:#111;
 padding:30px;
@@ -118,7 +161,43 @@ WhatsApp Us
 </div>
 
 </section>
+<section class="services-section">
 
+<h2>Our Services</h2>
+
+<div class="services-grid">
+
+<div class="card">
+<h3>Construction</h3>
+<p>
+Residential, commercial and infrastructure development solutions.
+</p>
+</div>
+
+<div class="card">
+<h3>Plant Hire</h3>
+<p>
+Reliable heavy machinery and equipment solutions for projects.
+</p>
+</div>
+
+<div class="card">
+<h3>Logistics</h3>
+<p>
+Professional transport and operational logistics support services.
+</p>
+</div>
+
+<div class="card">
+<h3>Engineering</h3>
+<p>
+Industrial engineering and project execution solutions.
+</p>
+</div>
+
+</div>
+
+</section>
 <footer>
 © 2026 Sondoda Holding (Pty) Ltd
 </footer>
