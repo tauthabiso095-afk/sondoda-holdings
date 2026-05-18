@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,43 +10,83 @@
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
 background:black;
 color:white;
-text-align:center;
+overflow-x:hidden;
 }
 
 .hero{
-padding:100px 20px;
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.content{
+max-width:900px;
+}
+
+.logo{
+width:180px;
+margin-bottom:30px;
 }
 
 h1{
-font-size:60px;
+font-size:70px;
 color:gold;
-margin-bottom:10px;
+margin-bottom:20px;
 }
 
-p{
+.tagline{
+font-size:30px;
+margin-bottom:20px;
+}
+
+.services{
 font-size:22px;
+color:#ddd;
+margin-bottom:40px;
 }
 
 .button{
 display:inline-block;
-margin-top:30px;
-padding:15px 40px;
+padding:18px 45px;
 background:gold;
 color:black;
 text-decoration:none;
 font-weight:bold;
 border-radius:10px;
+font-size:20px;
+transition:0.3s;
 }
 
-.footer{
+.button:hover{
+background:white;
+transform:scale(1.05);
+}
+
+footer{
+background:#111;
 padding:30px;
-font-size:14px;
+text-align:center;
 color:gray;
+font-size:14px;
 }
 
 </style>
@@ -54,13 +95,19 @@ color:gray;
 
 <body>
 
-<div class="hero">
+<section class="hero">
+
+<div class="content">
+
+<img src="logo.png" class="logo">
 
 <h1>SONDODA HOLDINGS</h1>
 
-<p>Success is Certain</p>
+<p class="tagline">
+Success is Certain
+</p>
 
-<p>
+<p class="services">
 Construction | Logistics | Engineering | Plant Hire
 </p>
 
@@ -70,11 +117,11 @@ WhatsApp Us
 
 </div>
 
-<div class="footer">
+</section>
 
+<footer>
 © 2026 Sondoda Holding (Pty) Ltd
-
-</div>
+</footer>
 
 </body>
 
