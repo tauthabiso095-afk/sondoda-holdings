@@ -204,7 +204,68 @@ min-width:300px;
 width:350px;
 max-width:100%;
 filter:drop-shadow(0 0 25px gold);
-} 
+}
+.contact-section{
+padding:100px 20px;
+background:#0d0d0d;
+text-align:center;
+}
+
+.contact-section h2{
+font-size:50px;
+color:gold;
+margin-bottom:50px;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.contact-card{
+background:#1b1b1b;
+padding:40px;
+border-radius:20px;
+border:1px solid #333;
+transition:0.3s;
+}
+
+.contact-card:hover{
+transform:translateY(-10px);
+border-color:gold;
+box-shadow:0 0 20px rgba(255,215,0,0.3);
+}
+
+.contact-card h3{
+color:gold;
+margin-bottom:15px;
+font-size:24px;
+}
+
+.contact-card p{
+color:#ccc;
+line-height:1.6;
+}
+
+.contact-button{
+display:inline-block;
+padding:18px 40px;
+background:gold;
+color:#111;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.contact-button:hover{
+transform:scale(1.05);
+background:white;
+}  
 footer{
 background:#111;
 padding:30px;
@@ -323,6 +384,39 @@ Our vision is to become a leading African infrastructure and industrial solution
 </div>
 
 </section>
+<section id="contact" class="contact-section">
+
+<h2>Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-card">
+<h3>Phone</h3>
+<p>067 106 8375</p>
+</div>
+
+<div class="contact-card">
+<h3>Email</h3>
+<p>bafanamoses19@gmail.com</p>
+</div>
+
+<div class="contact-card">
+<h3>Location</h3>
+<p>Ledig, Rustenburg, North West, South Africa</p>
+</div>
+
+<div class="contact-card">
+<h3>Business Hours</h3>
+<p>Mon - Fri : 08:00 - 17:00</p>
+</div>
+
+</div>
+
+<a class="contact-button" href="https://wa.me/27671068375" target="_blank">
+Chat on WhatsApp
+</a>
+
+</section>  
 <footer>
 © 2026 Sondoda Holding (Pty) Ltd
 </footer>
