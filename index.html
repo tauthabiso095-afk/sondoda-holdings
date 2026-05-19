@@ -205,6 +205,57 @@ width:350px;
 max-width:100%;
 filter:drop-shadow(0 0 25px gold);
 }
+.projects-section{
+padding:100px 20px;
+background:#0a0a0a;
+text-align:center;
+}
+
+.projects-section h2{
+font-size:50px;
+color:gold;
+margin-bottom:60px;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.project-card{
+background:#1b1b1b;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #333;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+border-color:gold;
+box-shadow:0 0 25px rgba(255,215,0,0.3);
+}
+
+.project-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.project-card h3{
+color:gold;
+font-size:28px;
+margin:25px 20px 15px;
+}
+
+.project-card p{
+color:#ccc;
+padding:0 20px 30px;
+line-height:1.6;
+}  
 .contact-section{
 padding:100px 20px;
 background:#0d0d0d;
@@ -379,6 +430,33 @@ Our vision is to become a leading African infrastructure and industrial solution
 
 <img src="logo.png" alt="Sondoda Holdings">
 
+</div>
+
+</div>
+
+</section>
+  <section id="projects" class="projects-section">
+
+<h2>Our Projects</h2>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop" alt="Construction Project">
+<h3>Infrastructure Development</h3>
+<p>Roadworks, civil construction and large-scale infrastructure solutions.</p>
+</div>
+
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop" alt="Engineering Project">
+<h3>Engineering Operations</h3>
+<p>Industrial engineering support and technical project execution.</p>
+</div>
+
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1200&auto=format&fit=crop" alt="Logistics Project">
+<h3>Logistics & Transport</h3>
+<p>Efficient transport and operational logistics management services.</p>
 </div>
 
 </div>
